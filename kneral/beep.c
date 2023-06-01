@@ -2,6 +2,7 @@
 #include </home/heige/source/include/clock.h>
 #include </home/heige/source/include/type.h>
 #include </home/heige/source/include/io.h>
+#include </home/heige/source/kneral/printx.c>
 void start_beep(void){
     int i=1000;
     u8 setting= 0b10110110;
@@ -12,7 +13,7 @@ void start_beep(void){
     for(;i<500;i++){
         outb(beep_port,0b00000000);
     }
-    
+    print("beep");
     
 
 }
